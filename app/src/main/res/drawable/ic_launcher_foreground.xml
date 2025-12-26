@@ -1,0 +1,49 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+  <!-- BlackBerry-inspired keyboard icon -->
+  <group android:translateX="24"
+      android:translateY="30">
+      
+      <!-- Keyboard base -->
+      <path
+          android:pathData="M0,0 L60,0 L60,48 L0,48 Z"
+          android:fillColor="#2D2D2D"
+          android:strokeColor="#1A1A1A"
+          android:strokeWidth="2"/>
+      
+      <!-- Top row keys (Q W E R T Y) -->
+      <path android:pathData="M4,4 L12,4 L12,10 L4,10 Z" android:fillColor="#3F3F3F"/>
+      <path android:pathData="M14,4 L22,4 L22,10 L14,10 Z" android:fillColor="#3F3F3F"/>
+      <path android:pathData="M24,4 L32,4 L32,10 L24,10 Z" android:fillColor="#3F3F3F"/>
+      <path android:pathData="M34,4 L42,4 L42,10 L34,10 Z" android:fillColor="#3F3F3F"/>
+      <path android:pathData="M44,4 L52,4 L52,10 L44,10 Z" android:fillColor="#3F3F3F"/>
+      <path android:pathData="M54,4 L58,4 L58,10 L54,10 Z" android:fillColor="#3F3F3F"/>
+      
+      <!-- Middle row keys (A S D F G H) -->
+      <path android:pathData="M6,13 L14,13 L14,19 L6,19 Z" android:fillColor="#3F3F3F"/>
+      <path android:pathData="M16,13 L24,13 L24,19 L16,19 Z" android:fillColor="#3F3F3F"/>
+      <path android:pathData="M26,13 L34,13 L34,19 L26,19 Z" android:fillColor="#00A0DC"/>
+      <path android:pathData="M36,13 L44,13 L44,19 L36,19 Z" android:fillColor="#3F3F3F"/>
+      <path android:pathData="M46,13 L54,13 L54,19 L46,19 Z" android:fillColor="#3F3F3F"/>
+      
+      <!-- Bottom row keys (Z X C V B) -->
+      <path android:pathData="M8,22 L16,22 L16,28 L8,28 Z" android:fillColor="#3F3F3F"/>
+      <path android:pathData="M18,22 L26,22 L26,28 L18,28 Z" android:fillColor="#3F3F3F"/>
+      <path android:pathData="M28,22 L36,22 L36,28 L28,28 Z" android:fillColor="#3F3F3F"/>
+      <path android:pathData="M38,22 L46,22 L46,28 L38,28 Z" android:fillColor="#3F3F3F"/>
+      <path android:pathData="M48,22 L56,22 L56,28 L48,28 Z" android:fillColor="#3F3F3F"/>
+      
+      <!-- Space bar -->
+      <path android:pathData="M12,31 L48,31 L48,37 L12,37 Z" android:fillColor="#00A0DC"/>
+      
+      <!-- BlackBerry trackpad/optical pad circle -->
+      <path android:pathData="M30,41 A3,3 0 1,1 30,47 A3,3 0 1,1 30,41"
+          android:fillColor="#BDBDBD"
+          android:strokeColor="#1A1A1A"
+          android:strokeWidth="0.5"/>
+  </group>
+</vector>

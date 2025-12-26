@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<input-method xmlns:android="http://schemas.android.com/apk/res/android"
+    android:settingsActivity="it.srik.TypeQ25.SettingsActivity"
+    android:supportsSwitchingToNextInputMethod="true">
+    <subtype
+        android:label="@string/input_method_name_en"
+        android:imeSubtypeLocale="en_US"
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeExtraValue="noSuggestions=true" />
+    <subtype
+        android:label="@string/input_method_name_it"
+        android:imeSubtypeLocale="it_IT"
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeExtraValue="noSuggestions=true" />
+    <subtype
+        android:label="@string/input_method_name_fr"
+        android:imeSubtypeLocale="fr_FR"
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeExtraValue="noSuggestions=true" />
+    <subtype
+        android:label="@string/input_method_name_de"
+        android:imeSubtypeLocale="de_DE"
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeExtraValue="noSuggestions=true" />
+    <subtype
+        android:label="@string/input_method_name_pl"
+        android:imeSubtypeLocale="pl_PL"
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeExtraValue="noSuggestions=true" />
+    <subtype
+        android:label="@string/input_method_name_es"
+        android:imeSubtypeLocale="es_ES"
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeExtraValue="noSuggestions=true" />
+</input-method>
+

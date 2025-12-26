@@ -1,0 +1,61 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Build directories
+build/
+*/build/
+app/build/
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.ipr
+out/
+
+# Keystore files (security)
+*.jks
+*.keystore
+
+# APK/AAB files
+*.apk
+*.aab
+*.ap_
+
+# Mac resource fork files
+._*
+
+# VS Code
+.vscode/
+
+# Kotlin
+.kotlin/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Reports
+*/reports/
+configuration-cache/
+
+# Log files
+*.log

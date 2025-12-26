@@ -1,0 +1,316 @@
+<resources>
+    <string name="app_name">TypeQ25</string>
+    <string name="input_method_name">TypeQ25 Physical Keyboard</string>
+    <string name="input_method_name_en">English</string>
+    <string name="input_method_name_it">Italiano</string>
+    <string name="input_method_name_fr">Français</string>
+    <string name="input_method_name_de">Deutsch</string>
+    <string name="input_method_name_pl">Polski</string>
+    <string name="input_method_name_es">Español</string>
+    
+    <!-- Settings Screen -->
+    <string name="settings_title">Ustawienia</string>
+    <string name="back">Wstecz</string>
+    <string name="settings_back_content_description">Wstecz</string>
+    
+    <!-- Long Press Section -->
+    <string name="long_press_title">Długie Naciśnięcie</string>
+    <string name="long_press_duration">Czas trwania długiego naciśnięcia: %1$dms</string>
+    <string name="long_press_description">Czas oczekiwania przed rozpoznaniem długiego naciśnięcia. Niższa wartość sprawia, że długie naciśnięcie jest bardziej responsywne, podczas gdy wyższa wartość wymaga dłuższego naciśnięcia.</string>
+    <string name="setting_applied_immediately">Ustawienie zastosowane natychmiast</string>
+    
+    <!-- Auto Capitalize Section -->
+    <string name="auto_capitalize_title">Auto-Wielka Litera Pierwsza</string>
+    <string name="auto_capitalize_description">Automatycznie pisze wielką literą pierwszą literę przy rozpoczęciu pisania w pustym polu tekstowym.</string>
+
+    <!-- Auto Capitalize After Period Section -->
+    <string name="auto_capitalize_after_period_title">Auto-Wielka Litera Po Kropce</string>
+    <string name="auto_capitalize_after_period_description">Automatycznie pisze wielką literą następną literę po wpisaniu kropki następującej po spacji (koniec zdania).</string>
+
+    <!-- Double Space to Period Section -->
+    <string name="double_space_to_period_title">Podwójna Spacja na Kropkę</string>
+    <string name="double_space_to_period_description">Podwójne naciśnięcie spacji, aby wstawić kropkę następującą po spacji i napisać wielką literą następną literę.</string>
+    
+    <!-- Swipe to Delete Section -->
+    <string name="swipe_to_delete_title">Włącz Przesunięcie do Usunięcia</string>
+    
+    <!-- Auto Show Keyboard Section -->
+    <string name="auto_show_keyboard_title">Automatycznie Pokaż Klawiaturę</string>
+    
+    <!-- Info Section -->
+    <string name="info_title">Informacje</string>
+    <string name="info_description">Ustawienia są automatycznie zapisywane i natychmiast stosowane do metody wprowadzania.</string>
+    
+    <!-- Main Activity -->
+    <string name="keyboard_title">Klawiatura TypeQ25</string>
+    <string name="keyboard_subtitle">Klawiatura fizyczna z obsługą długiego naciśnięcia</string>
+    <string name="settings_content_description">Ustawienia</string>
+    
+    <!-- Installation Section -->
+    <string name="installation_title">Instalacja</string>
+    <string name="installation_step1">1. Kliknij przycisk poniżej, aby otworzyć ustawienia</string>
+    <string name="installation_step2">2. Włącz \'Klawiatura Fizyczna TypeQ25\'</string>
+    <string name="installation_step3">3. Wróć tutaj i przetestuj klawiaturę</string>
+    <string name="open_keyboard_settings">Otwórz Ustawienia Klawiatury</string>
+    
+    <!-- Main Activity - Enable/Select IME -->
+    <string name="enable_TypeQ25">Włącz TypeQ25</string>
+    <string name="TypeQ25_not_enabled">TypeQ25 nie jest włączona</string>
+    <string name="choose_input_method">Wybierz metodę wprowadzania</string>
+    <string name="TypeQ25_not_selected">TypeQ25 nie jest wybrana</string>
+    
+    <!-- Test Section -->
+    <string name="test_keyboard_title">Test Klawiatury</string>
+    <string name="test_keyboard_description">Podłącz klawiaturę fizyczną i przetestuj poniżej:</string>
+    <string name="test_keyboard_normal">• Normalne naciśnięcie: wstawia znak</string>
+    <string name="test_keyboard_long_press">• Długie naciśnięcie (500ms): wstawia znak Alt</string>
+    <string name="test_field_label">Pole testowe</string>
+    <string name="test_field_placeholder">Wpisz tutaj za pomocą klawiatury fizycznej…</string>
+    
+    <!-- Last Event Section -->
+    <string name="last_keyboard_event_title">Ostatnie Zdarzenie Klawiatury</string>
+    <string name="no_event_yet">Brak zdarzeń</string>
+    
+    <!-- Long Press Mappings Section -->
+    <string name="long_press_mappings_title">Mapowania Długiego Naciśnięcia</string>
+    <string name="long_press_mappings_line1">Q→0, W→1, E→2, R→3, T→(, Y→), U→-, I→_, O→\', P→:</string>
+    <string name="long_press_mappings_line2">A→@, S→4, D→5, F→6, G→*, H→#, J→+, K→\", L→\'</string>
+    <string name="long_press_mappings_line3">Z→!, X→7, C→8, V→9, B→., N→\', M→?</string>
+    
+    <!-- Buttons -->
+    <string name="settings_button">Ustawienia</string>
+    <string name="change_keyboard_button">Zmień Klawiaturę</string>
+    
+    <!-- SYM Customization -->
+    <string name="sym_customization_title">Dostosuj Klawiaturę SYM</string>
+    <string name="sym_customization_button">Dostosuj Klawiaturę SYM</string>
+    <string name="sym_customization_description">Personalizuj mapowania emoji dla klawiatury SYM. Naciśnij dowolny klawisz, aby zmienić jego emoji.</string>
+    <string name="reset_to_default">Przywróć Domyślne</string>
+    <string name="select_emoji">Wybierz Emoji</string>
+    <string name="close">Zamknij</string>
+    
+    <!-- Auto-Correction Section -->
+    <string name="auto_correct_title">Auto-Korekta</string>
+    <string name="auto_correct_languages_title">Języki</string>
+    <string name="auto_correct_settings_title">Języki Auto-Korekty</string>
+    <string name="auto_correct_settings_description">Wybierz, które języki używać do auto-korekty. Język systemowy jest wyświetlany na górze.</string>
+    <string name="auto_correct_system_language">Język systemowy</string>
+    <string name="auto_correct_TypeQ25_description">Personalizacje ważne dla wszystkich języków</string>
+    <string name="auto_correct_other_languages">Inne Języki</string>
+    <string name="auto_correct_custom_languages">Języki Niestandardowe</string>
+    <string name="auto_correct_at_least_one_language_required">Co najmniej jeden język jest wymagany do działania</string>
+    <string name="auto_correct_edit">Edytuj</string>
+    <string name="auto_correct_edit_description">Naciśnij korektę, aby ją edytować, lub użyj przycisku +, aby dodać nową.</string>
+    <string name="auto_correct_add_correction">Dodaj Korektę</string>
+    <string name="auto_correct_edit_correction">Edytuj Korektę</string>
+    <string name="auto_correct_original">Oryginał</string>
+    <string name="auto_correct_corrected">Poprawione</string>
+    <string name="auto_correct_delete">Usuń</string>
+    <string name="auto_correct_save">Zapisz</string>
+    <string name="auto_correct_cancel">Anuluj</string>
+    <string name="auto_correct_no_corrections">Brak dostępnych korekt. Naciśnij przycisk +, aby dodać jedną.</string>
+    <string name="auto_correct_add_language">Dodaj Nowy Język</string>
+    <string name="auto_correct_language_code">Kod Języka</string>
+    <string name="auto_correct_language_name">Nazwa Języka</string>
+    <string name="auto_correct_language_code_hint">Wprowadź kod i nazwę dla swojego niestandardowego języka (np. \"fr\" / \"Francuski\", \"mydict\" / \"Mój Słownik\")</string>
+    <string name="auto_correct_language_code_required">Nazwa języka jest wymagana</string>
+    <string name="auto_correct_language_already_exists">Ten język już istnieje</string>
+    
+    <!-- SYM Customization Screen -->
+    <string name="sym_customize_title">Dostosuj Klawiaturę SYM</string>
+    <string name="sym_auto_close_title">Automatycznie Zamknij Layout SYM</string>
+    <string name="sym_auto_close_description">Automatycznie zamyka layout SYM po wstawieniu znaku, naciśnięciu Alt lub naciśnięciu Enter. Nie zamyka się z Control lub Shift.</string>
+    <string name="sym_enable_emoji_page_title">Włącz Stronę Emoji</string>
+    <string name="sym_enable_emoji_page_description">Pokazuje layout SYM emoji podczas przełączania.</string>
+    <string name="sym_enable_symbols_page_title">Włącz Stronę Symboli</string>
+    <string name="sym_enable_symbols_page_description">Pokazuje layout SYM symboli podczas przełączania.</string>
+    <string name="sym_swap_pages_title">Zamień Kolejność Stron SYM</string>
+    <string name="sym_swap_pages_description">Wybierz, która strona SYM pojawia się najpierw podczas przełączania.</string>
+    <string name="sym_order_emoji_first">Emoji najpierw</string>
+    <string name="sym_order_symbols_first">Symbole najpierw</string>
+    <string name="sym_instructions_title">Instrukcje</string>
+    <string name="sym_instructions_text">Naciśnij dowolny klawisz poniżej, aby zmienić jego emoji. Zmiany są automatycznie zapisywane.</string>
+    <string name="sym_reset_to_default">Przywróć Domyślne</string>
+    
+    <!-- Modifiers -->
+    <string name="modifier_shift">SHIFT</string>
+    <string name="modifier_ctrl">CTRL</string>
+    
+    <!-- Long Press Modifier Section -->
+    <string name="long_press_modifier_title">Modyfikator Długiego Naciśnięcia</string>
+    <string name="long_press_modifier_description">Wybierz, czy długie naciśnięcie symuluje Alt+klawisz czy Shift+klawisz</string>
+    <string name="long_press_modifier_alt">Alt</string>
+    <string name="long_press_modifier_shift">Shift</string>
+    
+    <!-- About Section -->
+    <string name="about_github">GitHub</string>
+    <string name="about_build_info">Build</string>
+    <string name="about_title">O Aplikacji</string>
+    
+    <!-- Launcher Shortcuts Section -->
+    <string name="launcher_shortcuts_title">Skróty Launchera</string>
+    <string name="launcher_shortcuts_experimental">Eksperymentalne</string>
+    <string name="launcher_shortcuts_description">Włącz skróty klawiszowe w launcherze</string>
+    <string name="launcher_shortcuts_configure">Skonfiguruj Skróty</string>
+    <string name="launcher_shortcuts_configure_description">Przypisz klawisze do otwierania aplikacji w launcherze</string>
+    
+    <!-- Power Shortcuts -->
+    <string name="power_shortcuts_press_key">Naciśnij klawisz, aby otworzyć aplikację</string>
+    
+    <!-- Launcher Shortcuts Screen -->
+    <string name="launcher_shortcuts_screen_title">Skróty Launchera</string>
+    <string name="launcher_shortcuts_screen_assign_title">Przypisz skróty do aplikacji</string>
+    <string name="launcher_shortcuts_screen_assign_description">Gdy jesteś w launcherze i nie w polu tekstowym, możesz nacisnąć klawisz, aby otworzyć przypisaną aplikację.</string>
+    <string name="launcher_shortcuts_not_assigned">Nie przypisane</string>
+    <string name="launcher_shortcuts_remove">Usuń</string>
+    <string name="launcher_shortcuts_app_name_unavailable">Aplikacja (nazwa niedostępna)</string>
+    <string name="launcher_shortcuts_shortcut_type">Skrót: %1$s</string>
+    <string name="launcher_shortcuts_shortcut_unknown">nieznany</string>
+    <string name="launcher_shortcuts_action_type">Akcja: %1$s</string>
+    
+    <!-- Launcher Shortcut Assignment Activity -->
+    <string name="launcher_shortcut_assignment_title">Przypisz aplikację do klawisza</string>
+    <string name="launcher_shortcut_assignment_key">Klawisz %1$s</string>
+    <string name="launcher_shortcut_assignment_search_placeholder">Szukaj aplikacji…</string>
+    <string name="launcher_shortcut_assignment_search_description">Szukaj</string>
+    <string name="launcher_shortcut_assignment_close">Zamknij</string>
+    <string name="launcher_shortcut_assignment_no_apps">Nie znaleziono aplikacji</string>
+    <string name="launcher_shortcut_assignment_no_results">Brak wyników dla \"%1$s\"</string>
+    <string name="launcher_shortcut_assignment_key_name">Klawisz %1$d</string>
+    
+    <!-- Notification Helper -->
+    <string name="notification_nav_mode_channel_name">TypeQ25 Nav Mode</string>
+    <string name="notification_nav_mode_channel_description">Powiadomienia dla trybu nav TypeQ25</string>
+    <string name="notification_nav_mode_activated_title">Tryb Nav Aktywowany</string>
+    <string name="notification_nav_mode_activated_text">Tryb nav aktywowany</string>
+    
+    <!-- Speech Recognition -->
+    <string name="speech_recognition_prompt">Mów teraz…</string>
+    
+    <!-- Auto Correct Edit Screen -->
+    <string name="auto_correct_search_placeholder">Szukaj korekt…</string>
+    <string name="auto_correct_search_description">Szukaj</string>
+    <string name="auto_correct_clear_search">Wyczyść wyszukiwanie</string>
+    <string name="auto_correct_no_corrections_found">Nie znaleziono korekt</string>
+    
+    <!-- Nav Mode Settings -->
+    <string name="nav_mode_title">Tryb Nav</string>
+    <string name="nav_mode_enable_title">Włącz Tryb Nav</string>
+    <string name="nav_mode_enable_description">Podwójne naciśnięcie Ctrl, aby aktywować tryb nawigacji</string>
+    <string name="nav_mode_key_mappings">Mapowania Klawiszy</string>
+    <string name="nav_mode_revert_to_default">Przywróć Domyślne</string>
+    <string name="nav_mode_note">Uwaga: Modyfikowanie klawiszy trybu nav wpływa również na kombinacje Ctrl+klawisz w polach tekstowych.</string>
+    <string name="nav_mode_configure_key">Skonfiguruj %1$s</string>
+    <string name="nav_mode_type">Typ</string>
+    <string name="nav_mode_keycode">Keycode</string>
+    <string name="nav_mode_action">Akcja</string>
+    <string name="nav_mode_none">Brak</string>
+    <string name="nav_mode_use_default">Użyj Domyślnego: %1$s</string>
+    <string name="nav_mode_save">Zapisz</string>
+    <string name="nav_mode_cancel">Anuluj</string>
+    <string name="nav_mode_default">domyślne</string>
+    
+    <!-- Unicode Character Picker -->
+    <string name="unicode_picker_title_for_letter">Wybierz znak dla %1$s</string>
+    <string name="unicode_picker_title">Wybierz znak unicode</string>
+    <string name="unicode_picker_close">Zamknij</string>
+    <string name="unicode_category_punctuation">Interpunkcja</string>
+    <string name="unicode_category_math">Symbole Matematyczne</string>
+    <string name="unicode_category_currency">Waluty</string>
+    <string name="unicode_category_technical">Symbole Techniczne</string>
+    <string name="unicode_category_arrows">Strzałki</string>
+    <string name="unicode_category_misc">Różne</string>
+    <string name="unicode_category_variations">Wariacje</string>
+    
+    <!-- Trackpad Debug Screen -->
+    <string name="trackpad_debug_title">Debug Trackpada</string>
+    <string name="trackpad_debug_motion_events_status">Status Zdarzeń Ruchu</string>
+    <string name="trackpad_debug_intercepting_events">Przechwytywanie zdarzeń ✓ (%1$d zdarzeń odebranych)</string>
+    <string name="trackpad_debug_waiting_events">Oczekiwanie na zdarzenia… (Spróbuj przesunąć palec po klawiaturze)</string>
+    <string name="trackpad_debug_test_field_title">Pole Testowe</string>
+    <string name="trackpad_debug_test_field_description">Skoncentruj się na tym polu i spróbuj użyć trackpada na klawiaturze</string>
+    <string name="trackpad_debug_test_field_placeholder">Wpisz tutaj lub użyj gestów trackpada…</string>
+    <string name="trackpad_debug_last_event_title">Ostatnie Zdarzenie Ruchu</string>
+    <string name="trackpad_debug_action">Akcja:</string>
+    <string name="trackpad_debug_source">Źródło:</string>
+    <string name="trackpad_debug_device">Urządzenie:</string>
+    <string name="trackpad_debug_device_id">ID Urządzenia: %1$d</string>
+    <string name="trackpad_debug_position">Pozycja:</string>
+    <string name="trackpad_debug_scroll">Przewijanie:</string>
+    <string name="trackpad_debug_pressure">Ciśnienie:</string>
+    <string name="trackpad_debug_size">Rozmiar:</string>
+    <string name="trackpad_debug_button_state">Stan Przycisku:</string>
+    <string name="trackpad_debug_timestamp">Znacznik Czasu: %1$d</string>
+    <string name="trackpad_debug_no_events">Nie wykryto jeszcze zdarzeń ruchu</string>
+    <string name="trackpad_debug_no_events_description">Spróbuj przesunąć palec po dotykowej klawiaturze</string>
+    
+    <!-- SYM Customization Screen -->
+    <string name="sym_tab_emoji">Emoji</string>
+    <string name="sym_tab_characters">Znaki</string>
+    
+    <!-- App Picker Dialog -->
+    <string name="app_picker_title">Wybierz aplikację</string>
+    <string name="app_picker_cancel">Anuluj</string>
+    <string name="app_picker_search_placeholder">Szukaj aplikacji…</string>
+    
+    <!-- Settings Screen -->
+    <string name="settings_nav_mode_configure">Skonfiguruj mapowania klawiszy trybu nawigacji</string>
+    <string name="settings_trackpad_debug_title">Debug Trackpada</string>
+    <string name="settings_trackpad_debug_description">Testuj zdarzenia trackpada/dotykowej klawiatury</string>
+    
+    <!-- Auto Correct Settings -->
+    <string name="auto_correct_TypeQ25_name">TypeQ25</string>
+    
+    <!-- Settings Categories -->
+    <string name="settings_category_keyboard_timing">Klawiatura &amp; Czasowanie</string>
+    <string name="settings_category_text_input">Wprowadzanie Tekstu</string>
+    <string name="settings_category_auto_correction">Auto-korekta</string>
+    <string name="settings_category_customization">Dostosowanie</string>
+    <string name="settings_category_advanced">Zaawansowane</string>
+    
+    <!-- Keyboard Layout Settings -->
+    <string name="layout_save_content_description">Zapisz layout</string>
+    <string name="layout_import_content_description">Importuj layout</string>
+    <string name="layout_imported_successfully">Layout zaimportowany pomyślnie</string>
+    <string name="layout_import_failed">Nie udało się zaimportować layoutu</string>
+    <string name="layout_invalid_file">Nieprawidłowy plik layoutu</string>
+    <string name="layout_import_error">Błąd podczas importowania layoutu: %1$s</string>
+    <string name="layout_save_canceled">Zapisywanie anulowane</string>
+    <string name="layout_saved_successfully">Layout zapisany pomyślnie</string>
+    <string name="layout_save_error">Błąd podczas zapisywania layoutu: %1$s</string>
+    <string name="layout_imported_name">Zaimportowany Layout</string>
+    <string name="layout_imported_description">Zaimportowany z pliku</string>
+    
+    <!-- Main Activity Event Display -->
+    <string name="modifier_alt">ALT</string>
+    <string name="event_unicode_label">Unicode: </string>
+    <string name="event_output_label">Wyjście: </string>
+    <string name="event_not_available">N/D</string>
+    
+    <!-- Nav Mode Key Labels -->
+    <string name="nav_mode_action_copy">Kopiuj</string>
+    <string name="nav_mode_action_paste">Wklej</string>
+    <string name="nav_mode_action_cut">Wytnij</string>
+    <string name="nav_mode_action_undo">Cofnij</string>
+    <string name="nav_mode_action_select_all">ZaznWsz</string>
+    <string name="nav_mode_action_expand_selection_left">←Zazn</string>
+    <string name="nav_mode_action_expand_selection_right">→Zazn</string>
+    <string name="nav_mode_keycode_up">↑</string>
+    <string name="nav_mode_keycode_down">↓</string>
+    <string name="nav_mode_keycode_left">←</string>
+    <string name="nav_mode_keycode_right">→</string>
+    <string name="nav_mode_keycode_center">○</string>
+    <string name="nav_mode_keycode_page_up">PgUp</string>
+    <string name="nav_mode_keycode_page_down">PgDn</string>
+    <string name="nav_mode_keycode_escape">Esc</string>
+    <string name="nav_mode_keycode_tab">Tab</string>
+    <string name="nav_mode_keycode_forward_delete">Del</string>
+    <string name="nav_mode_key_unknown">?</string>
+    
+    <!-- Speaker Toggle -->
+    <string name="speaker_toggle_on">Głośnik WŁĄCZONY</string>
+    <string name="speaker_toggle_off">Głośnik WYŁĄCZONY</string>
+    <string name="speaker_toggle_not_in_call">Nie w rozmowie</string>
+</resources>
+
+

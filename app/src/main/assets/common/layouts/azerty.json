@@ -1,0 +1,34 @@
+{
+  "name": "AZERTY",
+  "description": "French AZERTY keyboard layout",
+  "mappings": {
+    "KEYCODE_Q": { "lowercase": "a", "uppercase": "A" },
+    "KEYCODE_W": { "lowercase": "z", "uppercase": "Z" },
+    "KEYCODE_E": { "lowercase": "e", "uppercase": "E" },
+    "KEYCODE_R": { "lowercase": "r", "uppercase": "R" },
+    "KEYCODE_T": { "lowercase": "t", "uppercase": "T" },
+    "KEYCODE_Y": { "lowercase": "y", "uppercase": "Y" },
+    "KEYCODE_U": { "lowercase": "u", "uppercase": "U" },
+    "KEYCODE_I": { "lowercase": "i", "uppercase": "I" },
+    "KEYCODE_O": { "lowercase": "o", "uppercase": "O" },
+    "KEYCODE_P": { "lowercase": "p", "uppercase": "P" },
+    "KEYCODE_A": { "lowercase": "q", "uppercase": "Q" },
+    "KEYCODE_S": { "lowercase": "s", "uppercase": "S" },
+    "KEYCODE_D": { "lowercase": "d", "uppercase": "D" },
+    "KEYCODE_F": { "lowercase": "f", "uppercase": "F" },
+    "KEYCODE_G": { "lowercase": "g", "uppercase": "G" },
+    "KEYCODE_H": { "lowercase": "h", "uppercase": "H" },
+    "KEYCODE_J": { "lowercase": "j", "uppercase": "J" },
+    "KEYCODE_K": { "lowercase": "k", "uppercase": "K" },
+    "KEYCODE_L": { "lowercase": "l", "uppercase": "L" },
+    "KEYCODE_Z": { "lowercase": "w", "uppercase": "W" },
+    "KEYCODE_X": { "lowercase": "x", "uppercase": "X" },
+    "KEYCODE_C": { "lowercase": "c", "uppercase": "C" },
+    "KEYCODE_V": { "lowercase": "v", "uppercase": "V" },
+    "KEYCODE_B": { "lowercase": "b", "uppercase": "B" },
+    "KEYCODE_N": { "lowercase": "n", "uppercase": "N" },
+    "KEYCODE_M": { "lowercase": "m", "uppercase": "M" }
+  }
+}
+
+

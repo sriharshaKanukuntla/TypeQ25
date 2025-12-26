@@ -1,0 +1,25 @@
+{
+  "description": "Default special characters to show in variations bar when no other suggestions/variations are available",
+  "categories": {
+    "commonly_used": [
+      "$", "%", "&", "=", "~", "^",
+      "[", "]", "{", "}", "<", ">",
+      "\\", "|"
+    ],
+    "quotes_and_dashes": [
+      "\"", "'", "-", "_"
+    ],
+    "math_and_technical": [
+      "+", "-", "*", "/", "=", "<", ">"
+    ],
+    "emoji_alternatives": [
+      "*", "#", "@"
+    ]
+  },
+  "default_bar": [
+    "$", "%", "&", "=", "~", 
+    "[", "]", "{", "}", "<", ">", "\\", "|",
+    "\"", "'", "-", "_", 
+    "+", "*", "/", "#", "@"
+  ]
+}
