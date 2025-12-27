@@ -346,4 +346,4 @@ This is a personal hobby project, but contributions are welcome! Feel free to:
 5. When typing, switch to TypeQ25 from your keyboard selector
 6. Configure settings to your preferences
 
-This is initially cloned from Pasteria project and made several improvements to work with Zinwa Q25
+This project is initially cloned from Pasteria project and made several improvements to work with Zinwa Q25
