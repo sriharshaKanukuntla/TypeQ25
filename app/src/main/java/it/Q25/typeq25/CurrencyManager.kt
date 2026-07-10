@@ -9,7 +9,7 @@ object CurrencyManager {
     private const val KEY_CURRENCY = "selected_currency"
 
     private fun getPreferences(context: Context): SharedPreferences {
-        return context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+        return context.safeSharedPreferences(PREFS_NAME)
     }
 
     fun setCurrency(context: Context, currency: String) {

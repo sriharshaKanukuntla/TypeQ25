@@ -1,6 +1,7 @@
 package it.srik.TypeQ25.inputmethod
 
 import android.animation.Animator
+import it.srik.TypeQ25.safeSharedPreferences
 import android.animation.AnimatorListenerAdapter
 import android.animation.ValueAnimator
 import android.content.Context
@@ -540,7 +541,7 @@ class StatusBarController(
         
         button.setOnClickListener {
             // Save current SYM page state temporarily (will be confirmed only if user presses back)
-            val prefs = context.getSharedPreferences("TypeQ25_prefs", Context.MODE_PRIVATE)
+            val prefs = context.safeSharedPreferences("TypeQ25_prefs")
             val currentSymPage = prefs.getInt("current_sym_page", 0)
             if (currentSymPage > 0) {
                 // Save as pending - will be converted to restore only if user presses back

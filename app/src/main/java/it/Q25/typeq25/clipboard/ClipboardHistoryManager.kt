@@ -5,6 +5,7 @@ import android.content.ClipboardManager
 import android.content.Context
 import android.content.SharedPreferences
 import android.util.Log
+import it.srik.TypeQ25.safeSharedPreferences
 import org.json.JSONArray
 import org.json.JSONObject
 
@@ -28,7 +29,7 @@ class ClipboardHistoryManager(private val context: Context) {
         val preview: String = text.take(100) // First 100 chars for display
     )
     
-    private val prefs: SharedPreferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+    private val prefs: SharedPreferences = context.safeSharedPreferences(PREFS_NAME)
     private val clipboardManager = context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
     private val history = mutableListOf<ClipboardItem>()
     

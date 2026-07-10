@@ -2,6 +2,7 @@ package it.srik.TypeQ25.inputmethod.ui
 
 import android.content.Context
 import android.content.SharedPreferences
+import it.srik.TypeQ25.safeSharedPreferences
 import org.json.JSONArray
 import org.json.JSONObject
 
@@ -13,7 +14,7 @@ class EmojiDataParser(private val context: Context) {
     
     private val emojiList: List<EmojiData>
     private val categories: Map<String, List<String>>
-    private val prefs: SharedPreferences = context.getSharedPreferences("emoji_prefs", Context.MODE_PRIVATE)
+    private val prefs: SharedPreferences = context.safeSharedPreferences("emoji_prefs")
     private val CUSTOM_EMOJIS_PREFIX = "custom_emojis_"
     
     init {

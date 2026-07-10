@@ -13,7 +13,7 @@ object DeviceManager {
     private var cachedDevice: String? = null
 
     private fun getPreferences(context: Context): SharedPreferences {
-        return context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+        return context.safeSharedPreferences(PREFS_NAME)
     }
 
     fun setDevice(context: Context, device: String) {
