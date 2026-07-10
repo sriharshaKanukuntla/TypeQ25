@@ -1,6 +1,7 @@
 package it.srik.TypeQ25.inputmethod.ui
 
 import android.content.Context
+import it.srik.TypeQ25.safeSharedPreferences
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.util.Log
@@ -91,7 +92,7 @@ class SymbolPickerPopup(
     )
     
     // SharedPreferences for tracking frequently used items
-    private val prefs = context.getSharedPreferences("symbol_picker_prefs", Context.MODE_PRIVATE)
+    private val prefs = context.safeSharedPreferences("symbol_picker_prefs")
     
     // Cache for frequent items to avoid repeated parsing
     private var cachedFrequentItems: List<String>? = null

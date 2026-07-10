@@ -3,6 +3,7 @@ package it.srik.TypeQ25.inputmethod
 import android.content.Context
 import android.util.Log
 import it.srik.TypeQ25.SettingsManager
+import it.srik.TypeQ25.safeSharedPreferences
 
 /**
  * Provides word suggestions based on partial input.
@@ -229,7 +230,7 @@ class SuggestionEngine(private val context: Context) {
      */
     fun saveUserHistory() {
         try {
-            val prefs = context.getSharedPreferences(USER_HISTORY_PREFS, Context.MODE_PRIVATE)
+            val prefs = context.safeSharedPreferences(USER_HISTORY_PREFS)
             val editor = prefs.edit()
             
             // Save top 500 most used words
@@ -254,7 +255,7 @@ class SuggestionEngine(private val context: Context) {
      */
     private fun loadUserHistory() {
         try {
-            val prefs = context.getSharedPreferences(USER_HISTORY_PREFS, Context.MODE_PRIVATE)
+            val prefs = context.safeSharedPreferences(USER_HISTORY_PREFS)
             userHistory.clear()
             
             for ((word, _) in prefs.all) {
