@@ -25,36 +25,31 @@ class AutoCorrectionManager(
         }
 
         val correction = AutoCorrector.getLastCorrection() ?: return false
+
         val textBeforeCursor = inputConnection.getTextBeforeCursor(
-            correction.correctedWord.length + 2,
+            correction.correctedWord.length + 4,
             0
         ) ?: return false
 
-        if (textBeforeCursor.length < correction.correctedWord.length) {
+        // Split off any trailing whitespace/punctuation between the corrected
+        // word and the cursor. `core` should then end with the corrected word.
+        val trailing = textBeforeCursor.takeLastWhile { !it.isLetterOrDigit() }
+        val core = textBeforeCursor.dropLast(trailing.length)
+
+        if (!core.endsWith(correction.correctedWord)) {
             return false
         }
 
-        val lastChars = textBeforeCursor.substring(
-            maxOf(0, textBeforeCursor.length - correction.correctedWord.length - 1)
-        )
+        // Delete the corrected word and its trailing run
+        // Restore the original word followed by the same trailing text.
+        val charsToDelete = correction.correctedWord.length + trailing.length
 
-        val matchesCorrection = lastChars.endsWith(correction.correctedWord) ||
-            lastChars.trimEnd().endsWith(correction.correctedWord)
-
-        if (!matchesCorrection) {
-            return false
-        }
-
-        // Only delete the corrected word itself, not trailing punctuation/whitespace
-        // This ensures backspace deletes one character at a time as expected
-        val charsToDelete = correction.correctedWord.length
-
-        // Use batch edit to ensure operations are atomic and prevent issues with 
+        // Use batch edit to ensure operations are atomic and prevent issues with
         // interleaved input processing that could cause duplicate characters
         inputConnection.beginBatchEdit()
         try {
             inputConnection.deleteSurroundingText(charsToDelete, 0)
-            inputConnection.commitText(correction.originalWord, 1)
+            inputConnection.commitText(correction.originalWord + trailing, 1)
         } finally {
             inputConnection.endBatchEdit()
         }
