@@ -44,7 +44,7 @@ object SettingsManager {
     private const val KEY_SPELL_CHECK_ENABLED = "spell_check_enabled" // Enable offline spell checker
     private const val KEY_EMOJI_SHORTCODE_ENABLED = "emoji_shortcode_enabled" // Enable emoji shortcodes (:smile: -> 😊)
     private const val KEY_SYMBOL_SHORTCODE_ENABLED = "symbol_shortcode_enabled" // Enable symbol shortcodes (:tm: -> ™)
-    private const val KEY_KEYCODE_7_BEHAVIOR = "keycode_7_behavior" // Behavior for KEYCODE_7 (Q25 ONLY): "zero" or "alt_zero"
+    private const val KEY_KEYCODE_7_BEHAVIOR = "keycode_7_behavior" // Behavior for KEYCODE_7 (Q25 ONLY): "zero", "alt_zero" or "zero_only"
     private const val KEY_USE_ARABIC_NUMERALS = "use_arabic_numerals" // Use Arabic-Indic numerals (٠-٩) instead of Western (0-9) when Arabic layout is active
     private const val KEY_USE_ARABIC_PUNCTUATION = "use_arabic_punctuation" // Use Arabic punctuation (،؟) instead of Western (,?) when Arabic layout is active
     
@@ -255,7 +255,8 @@ object SettingsManager {
     /**
      * Returns the behavior mode for KEYCODE_7.
      * This setting is only applicable to Q25 devices.
-     * @return "zero" (inserts 0, Alt+7 for speech) or "alt_zero" (triggers speech, Alt+7 for 0)
+     * @return "zero" (inserts 0, Alt+7 for speech), "alt_zero" (triggers speech, Alt+7 for 0)
+     *         or "zero_only" (always inserts 0, speech never triggered)
      *         Returns default "alt_zero" for non-Q25 devices.
      */
     fun getKeycode7Behavior(context: Context): String {
@@ -271,7 +272,8 @@ object SettingsManager {
     /**
      * Sets the behavior mode for KEYCODE_7.
      * This setting is only applicable to Q25 devices.
-     * @param mode "zero" (inserts 0, Alt+7 for speech) or "alt_zero" (triggers speech, Alt+7 for 0)
+     * @param mode "zero" (inserts 0, Alt+7 for speech), "alt_zero" (triggers speech, Alt+7 for 0)
+     *             or "zero_only" (always inserts 0, speech never triggered)
      */
     fun setKeycode7Behavior(context: Context, mode: String) {
         // Only allow setting on Q25/Jelly2 devices
