@@ -1776,8 +1776,24 @@ class PhysicalKeyboardInputMethodService : InputMethodService(), LifecycleOwner,
         if (currentWord.isEmpty()) return emptyList()
         
         val suggestions = suggestionEngine.getSuggestions(currentWord, 3)
-        Log.d(TAG, "getSuggestions: returning ${suggestions.size} suggestions: $suggestions")
-        return suggestions
+
+
+        val ruleCorrection = if (SettingsManager.getAutoCorrectEnabled(this)) {
+            AutoCorrector.getCorrection(currentWord, context = this)
+        } else {
+            null
+        }
+
+        val result = if (ruleCorrection != null &&
+            !ruleCorrection.equals(currentWord, ignoreCase = true)) {
+            (listOf(ruleCorrection) +
+                suggestions.filter { !it.equals(ruleCorrection, ignoreCase = true) }).take(3)
+        } else {
+            suggestions
+        }
+
+        Log.d(TAG, "getSuggestions: returning ${result.size} suggestions: $result")
+        return result
     }
 
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
