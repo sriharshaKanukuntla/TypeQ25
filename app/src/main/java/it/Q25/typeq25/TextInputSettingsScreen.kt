@@ -735,6 +735,45 @@ fun TextInputSettingsScreen(
                         }
                     }
                 }
+
+                // Option 3: Always insert 0 (speech to text never triggered)
+                Surface(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(80.dp)
+                        .clickable {
+                            keycode7Behavior = "zero_only"
+                            SettingsManager.setKeycode7Behavior(context, "zero_only")
+                        }
+                ) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 16.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(12.dp)
+                    ) {
+                        RadioButton(
+                            selected = keycode7Behavior == "zero_only",
+                            onClick = {
+                                keycode7Behavior = "zero_only"
+                                SettingsManager.setKeycode7Behavior(context, "zero_only")
+                            }
+                        )
+                        Column(modifier = Modifier.weight(1f)) {
+                            Text(
+                                text = "Always insert 0",
+                                style = MaterialTheme.typography.titleMedium,
+                                fontWeight = FontWeight.Medium
+                            )
+                            Text(
+                                text = "Inserts 0 with or without Alt, speech to text is never triggered",
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
+                    }
+                }
             }
         }
     }

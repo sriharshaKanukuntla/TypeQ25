@@ -1088,8 +1088,9 @@ class InputEventRouter(
             val isAltActive = altLatchActive || altOneShot || event?.isAltPressed == true
             
             when (behavior) {
-                "zero" -> {
-                    // Insert 0 on keycode 7, Alt+7 triggers speech
+                "zero", "zero_only" -> {
+                    // Insert 0 on keycode 7; Alt+7 triggers speech ("zero")
+                    // or also inserts 0 ("zero_only")
                     if (!isAltActive) {
                         ic?.commitText("0", 1)
                         updateStatusBar()
@@ -1197,7 +1198,7 @@ class InputEventRouter(
                     }
                     return true
                 }
-                "alt_zero" -> {
+                "alt_zero", "zero_only" -> {
                     // Alt+7 inserts 0 (or ٠ for Arabic with numerals enabled, but always 0 in passwords)
                     val zero = if (!isPasswordField) {
                         val currentLayout = SettingsManager.getKeyboardLayout(context)
