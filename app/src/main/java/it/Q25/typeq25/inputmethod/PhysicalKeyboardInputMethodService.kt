@@ -1770,7 +1770,13 @@ class PhysicalKeyboardInputMethodService : InputMethodService(), LifecycleOwner,
             Log.d(TAG, "getSuggestions: suggestionEngine not initialized")
             return emptyList()
         }
-        
+
+        // Don't offer word suggestions/autocorrect in fields where they aren't
+        // used (passwords etc)
+        if (shouldDisableSmartFeatures) {
+            return emptyList()
+        }
+
         val currentWord = getCurrentWord()
         Log.d(TAG, "getSuggestions: currentWord='$currentWord'")
         if (currentWord.isEmpty()) return emptyList()
